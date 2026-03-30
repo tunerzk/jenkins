@@ -15,6 +15,8 @@ BAM 1
 Modify the startup script to include terraform, AWS, and Python, update the java version used to either Java 21 or 25, and upload a screenshot of all 4 versions (terraform, AWS, Python, Java) after connecting to the server's/container's command line. show evidence via screenshots.
 <img width="1413" height="688" alt="image" src="https://github.com/user-attachments/assets/ebd0155c-2f0d-4a8f-96a3-e375fe82f9e9" />
 <img width="1384" height="695" alt="image" src="https://github.com/user-attachments/assets/7b6c1c60-0b83-469b-8f00-173395aa7ac1" />
+<img width="730" height="213" alt="image" src="https://github.com/user-attachments/assets/ff25ff54-9b5a-4e85-8009-b330b3917266" />
+
 
 
 
