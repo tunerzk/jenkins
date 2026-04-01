@@ -49,6 +49,10 @@ This is the industry-standard trigger for GitHub → Jenkins automation.
 
 Why? Instant response to commits, No polling, Works perfectly with GitHub webhooks, and is ideal for both dev and prod.
 
+githubpush() is best used when a GitHub repo is updated and production 
+pollSCM() is best used for testing enviroments
+
+
 | Trigger | What It Does | Best For | Not Good For |
 | --- | --- | --- | --- |
 | **githubPush()** | Runs on GitHub webhook | Production, fast CI/CD | Offline Jenkins |
