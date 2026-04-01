@@ -25,6 +25,17 @@ Modify the startup script to include terraform, AWS, and Python, update the java
 
 BAM 2
 Create an IAM user with least privilege to deploy infrastructure on the pipeline. Do your best to restrict access, list out the IAM permissions granted, and write out your methodology behind doing so.
+<img width="944" height="780" alt="image" src="https://github.com/user-attachments/assets/27df96d8-6232-49a2-8867-3f4dd83be273" />
+
+My pipeline currently needs:
+*S3 BUCKET
+*DYNAMODB FOR LOCKING
+*JENKINS TERRAFORM PIPELINE
+*S3 BACKEND
+*RESTRICTED RESOURCES USING ARN
+Grant Jenkins only the AWS actions Terraform needs, restrict them to specific ARNs, deny destructive actions unless required, and continuously test and audit the permissions. This is how you build a secure, production‑grade CI/CD IAM policy.
+
+
 
 
 
@@ -32,3 +43,16 @@ Create an IAM user with least privilege to deploy infrastructure on the pipeline
 
 BAM 3
 Write out and define what each of the pipeline triggers does in Jenkins. Which trigger(s) would be used when a GitHub repo is updated? What would be good for testing environments? What works better within production? 
+
+Jenkins periodically checks the Git repo for changes. Triggers the pipeline immediately when GitHub sends a webhook event.
+This is the industry-standard trigger for GitHub → Jenkins automation.
+
+Why? Instant response to commits, No polling, Works perfectly with GitHub webhooks, and is ideal for both dev and prod.
+
+| Trigger | What It Does | Best For | Not Good For |
+| --- | --- | --- | --- |
+| **githubPush()** | Runs on GitHub webhook | Production, fast CI/CD | Offline Jenkins |
+| **pollSCM** | Polls repo for changes | Testing, labs | Production (wasteful) |
+| **cron** | Scheduled runs | Nightly tests, maintenance | Real-time deployments |
+| **upstream** | Runs after another job | Multi-stage pipelines | GitHub-driven workflows |
+| **manual** | User clicks “Build Now” | Testing, safe deploys | Automation |
