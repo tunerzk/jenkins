@@ -40,6 +40,11 @@ JENKINSFILE UPLOAD TO S3 TERRAFORM#######################
 <img width="1076" height="495" alt="image" src="https://github.com/user-attachments/assets/50919eb7-6648-4785-b43c-e756a57b45d9" />
 
 
+FILES UPLOADED TO MY S3 BUCKET FOR GUTCHECK ###########################
+<img width="1414" height="617" alt="image" src="https://github.com/user-attachments/assets/739f3100-92a2-4356-bedd-94854b323de4" />
+
+
+
 
 
 
