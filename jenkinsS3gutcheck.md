@@ -45,6 +45,10 @@ JENKINSFILE UPLOAD TO S3 TERRAFORM#######################
 FILES UPLOADED TO MY S3 BUCKET FOR GUTCHECK ###########################
 <img width="1414" height="617" alt="image" src="https://github.com/user-attachments/assets/739f3100-92a2-4356-bedd-94854b323de4" />
 
+TERRAFORM ADDING OBJECTS TO MY S3 BUCKET COMPLETED##########################
+<img width="1050" height="403" alt="image" src="https://github.com/user-attachments/assets/9011c588-af0d-4a65-bf9c-5d083f15cf65" />
+
+
 
 
 THEO ARMAGEDDON APPROVAL PROOF#############################################
